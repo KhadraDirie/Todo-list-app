@@ -13,7 +13,7 @@ const filterOption = document.querySelector('.filter-todo');
 //Event Listerners
 todoButton. addEventListener('click', addTodo);
 todoList.addEventListener('click',deleteTodo);
-filterOption.addEventListener('click', filterTodo);
+filterOption.addEventListener('change', filterTodo);
 
 
 //Functions
@@ -75,9 +75,9 @@ if (item.classList[0] === "complete-btn"){
 function filterTodo(e) {
 
 
-  const todos = todoList.childNodes;
+  const todo = todoList.childNodes;
 
-  todos.forEach(function(todo) {
+  todo.forEach(function(todo) {
     if (todo.nodeType == Node.ELEMENT_NODE) {
          switch(e.target.value) {
             case "all":
@@ -102,9 +102,5 @@ function filterTodo(e) {
     }
 }) 
 }
-
-
-//SAVE WITH LOCAL STORAGE 
-//LocalStorage is a form of web storage provided by the browser that allows web applications to store data locally within a user's browser with no expiration date
 
 
