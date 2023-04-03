@@ -1,5 +1,6 @@
 //Selectors
 //document.querySelector() method we are storing html elements with specific class to their respective constants. Now constants todoInput, todoButton, todoList, filterOption contains html elements.
+
 const todoInput = document.querySelector ('.todo-input');
 
 const todoButton = document.querySelector ('.todo-button');
@@ -102,5 +103,6 @@ function filterTodo(e) {
     }
 }) 
 }
+
 
 
